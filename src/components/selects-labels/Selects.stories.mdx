@@ -1,0 +1,49 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { SelectTab, SelectOptions, SelectedOptions, SelectList } from './Selects.jsx'
+
+<Meta title="Selects and Labels/Selects" component={SelectTab, SelectOptions} />
+
+# Select Tab
+
+<Canvas>
+  <Story
+    name="SelectTab"
+    args={{
+        ...SelectTab.defaultProps,
+        label: 'Histórico',
+        isSelected: false
+    }}
+  >
+    {(args) => <SelectTab {...args} />}
+  </Story>
+</Canvas>
+
+# Select Select Options
+
+<Canvas>
+  <Story
+    name="Select options"
+    args={{
+        ...SelectOptions.defaultProps,
+        label: 'Nome do hospital',
+        isSelected: false
+    }}
+  >
+    {(args) => <div {...args}> {args.isSelected ? <SelectedOptions {...args}/> : <SelectOptions {...args}/>} </div>}
+  </Story>
+</Canvas>
+
+# Select Select List
+
+<Canvas>
+  <Story
+    name="Select list"
+    args={{
+        ...SelectList.defaultProps,
+        label: 'Nome do hospital',
+        isSelected: false
+    }}
+  >
+    {(args) => <SelectList {...args} />}
+  </Story>
+</Canvas>

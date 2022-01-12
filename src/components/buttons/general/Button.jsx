@@ -9,9 +9,9 @@ export const ButtonStyles = styled.button`
     padding: 0.4rem 2rem;
     text-align: center;
     display: inline-block;
-    font-size: 0.75rem;
     border-radius: 50rem;
     cursor: pointer;
+    font-size: 0.75rem;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     border: 2px solid transparent;

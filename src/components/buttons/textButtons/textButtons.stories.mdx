@@ -1,0 +1,66 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { TextButton, AddTextButton, ReplaceTextButton, DownloadTextButton, DeleteTextButton } from './textButtons.jsx'
+
+<Meta title="Buttons/Text buttons" component={TextButton} />
+
+# Button With Icons
+
+<Canvas>
+  <Story
+    name="Text"
+    args={{
+        ...TextButton.defaultProps,
+        label: 'Alterar status',
+    }}
+  >
+    {(args) => <TextButton {...args} />}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Add"
+    args={{
+        ...AddTextButton.defaultProps,
+        label: 'Adicionar',
+    }}
+  >
+    {(args) => <AddTextButton {...args} />}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Replace"
+    args={{
+        ...ReplaceTextButton.defaultProps,
+        label: 'Substituir',
+    }}
+  >
+    {(args) => <ReplaceTextButton {...args} />}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Download"
+    args={{
+        ...DownloadTextButton.defaultProps,
+        label: 'Download',
+    }}
+  >
+    {(args) => <DownloadTextButton {...args} />}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Delete"
+    args={{
+        ...DeleteTextButton.defaultProps,
+        label: 'Excluir',
+    }}
+  >
+    {(args) => <DeleteTextButton {...args} />}
+  </Story>
+</Canvas>
