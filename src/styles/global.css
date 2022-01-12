@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+:root {
+    /* Primaries */
+    --blue: #3f50de;
+    --coral: #f8aa9e;
+    --cream: #fff3ef;
+
+    /* Secondaries */
+    --dark-blue: #3240af;
+    --dark-pink: #f27186;
+    --yellow: #FDE2AA;
+    --spacial-grey: #201C50;
+
+    /* Grey scale */
+    --white: #FFFFFF;
+    --grey1: #F1F1F5;
+    --grey2: #EAEAEA;
+    --grey3: #B5B5BE;
+    --grey4: #696974;
+    --grey5: #171725;
+
+    /* Alerts */
+    --positive: #3DD598;
+    --attention: #F8E130;
+    --error: #FC5A5A;
+}
+
+

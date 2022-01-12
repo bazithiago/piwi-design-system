@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 const HomepageStyles = styled.div`
     color: red;
 `
