@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=5ccb7323801f"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
     "@storybook/addon-links": "^6.4.12",
     "@storybook/react": "^6.4.12",
     "babel-loader": "^8.2.3",
-    "babel-plugin-inline-react-svg": "^2.0.1"
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "chromatic": "^6.3.4"
   }
 }
