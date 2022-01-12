@@ -1,0 +1,58 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { InputText, InputSelect, InputDate, SearchInput } from './Inputs.jsx'
+
+<Meta title="Inputs/Text" component={InputText, InputSelect, InputDate, SearchInput} />
+
+# Text input
+<Canvas>
+  <Story
+    name="Text input"
+    args={{
+        ...InputText.defaultProps,
+        label: 'Produto',
+        placeholder: 'Essencial 10'
+    }}
+  >
+    {(args) => <InputText {...args}/>}
+  </Story>
+</Canvas>
+
+# Date input
+<Canvas>
+  <Story
+    name="Date input"
+    args={{
+        ...InputDate.defaultProps,
+        label: 'Selecione uma data'
+    }}
+  >
+    {(args) => <InputDate {...args}/>}
+  </Story>
+</Canvas>
+
+# Seacrh input
+<Canvas>
+  <Story
+    name="Seacrh input"
+    args={{
+        ...SearchInput.defaultProps,
+        label: 'CEP'
+    }}
+  >
+    {(args) => <SearchInput {...args}/>}
+  </Story>
+</Canvas>
+
+# Select input
+<Canvas>
+  <Story
+    name="Select"
+    args={{
+        ...InputSelect.defaultProps,
+        label: 'Selecione'
+    }}
+  >
+    {(args) => <InputSelect {...args}/>}
+  </Story>
+</Canvas>
+
