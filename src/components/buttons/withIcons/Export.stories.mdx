@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { Export, Filter } from './ButtonWithIcons.jsx'
+
+<Meta title="Buttons/Button With Icons" component={Export, Filter} />
+
+# Button With Icons
+
+<Canvas>
+  <Story
+    name="Exportar"
+    args={{
+        ...Export.defaultProps,
+        label: 'Exportar',
+    }}
+  >
+    {(args) => <Export {...args}> </Export>}
+  </Story>
+</Canvas>
+
+
+<Canvas>
+  <Story
+    name="Filtrar"
+    args={{
+        ...Filter.defaultProps,
+        label: 'Filtrar',
+    }}
+  >
+    {(args) => <Filter {...args}> </Filter>}
+  </Story>
+</Canvas>

@@ -9,11 +9,24 @@ import { Button } from './Button.jsx'
 
 <Canvas>
   <Story
-    name="Button"
+    name="Primary button"
     args={{
         ...Button.defaultProps,
         label: 'Primary button',
         primary: true,
+    }}
+  >
+    {(args) => <Button {...args}>  </Button>}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Secondary button"
+    args={{
+        ...Button.defaultProps,
+        label: 'Secondary button',
+        secondary: true,
     }}
   >
     {(args) => <Button {...args}>  </Button>}
